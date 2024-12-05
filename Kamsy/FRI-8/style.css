@@ -1,0 +1,45 @@
+.flag{
+margin-top: 60px;
+display: flex;
+/* flex-direction: column; */
+height: 300px;
+width: 1000px;
+border: 1px solid black;
+}
+.green{
+    width: 333px;
+    height: 300px;
+    background-color: green;
+}
+.white{
+    width: 333px;
+    height: 300px;
+    background-color: white;
+}
+
+.benin{
+    width: 1000px;
+    height: 300px;
+    display: flex;
+    border: 1px solid black;
+    /* background-color: black; */
+}
+.left{
+    width: 40%;
+    height: 100%;
+    background: green;
+}
+.right{
+    width: 60%;
+    height: 100%;
+}
+.top{
+    height: 50%;
+    width: 100%;
+    background-color: yellow;
+}
+.bottom{
+    height: 50%;
+    width: 100%;
+    background-color: red;
+}
