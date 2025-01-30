@@ -1,68 +1,240 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
 }
 
+/* Banner Section */
+.banner {
+    background-image: url(./imh\ 4.jpg);
+    background-size: cover;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 65vh;
+}
+
+.banner-content {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Text Section */
+.text-section {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+}
+
+.text-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.text-section .highlight {
+    color: #f39c12;
+}
+
+.text-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Buttons */
+.banner-buttons {
+    margin-top: 20px;
+}
+
+.banner-buttons .btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin-right: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn.primary {
+    background: #f39c12;
+    color: white;
+}
+
+.btn.primary:hover {
+    background: #d87b09;
+}
+
+.btn.secondary {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn.secondary:hover {
+    background: white;
+    color: #333;
+}
+
+/* Image Section */
+.image-section {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.image-section img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .banner-content {
+        flex-direction: column;
+    }
+
+    .text-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .image-section img {
+        height: 200px;
+        width: 200px;
+    }
+}
+
 header {
-    background: #333;
+    background: #000000;
     color: #fff;
     padding: 10px 0;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
 }
 
 header h1 {
-    margin: 0;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
-    padding: 0;
+    
 }
 
 nav ul li {
-    margin: 0 20px;
+    padding: 0 20px;
 }
 
 nav ul li a {
+    font-size: 13px;
     color: #fff;
     text-decoration: none;
 }
 
+nav ul li a:hover {
+    color: #2575fc;
+}
+
 section {
     padding: 20px;
-    margin: 20px 0;
+    margin: 60px 0;
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
 }
 
-#about, #projects, #contact {
-    background-color: #f4f4f4;
+#about {
+    background-color: #ffffff;
+    box-shadow: 1px 8px 16px 1px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: justify;
+    display: flex;
+    justify-content: space-between;
+}
+
+#about img {
+    height: 300px;
+}
+
+#about p {
+    padding-top: 15px;
+    font-size: 13px;
+    width: 500px;
+    text-align: left;
+    line-height: 25px; /* Fixed missing semicolon */
+}
+
+
+#projects {
+    background-color: #ffffff;
+    box-shadow: 1px 8px 16px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    height: 100vh;
+}
+
+#projects h2 {
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+
+.project img {
+    height: 240px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.project{
+    line-height: 20px;
+    height: 490px;
+    transition: 0.45s;
+}
+
+.kamsi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+#contact {
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 10px;
 }
 
-.project {
-    margin: 15px 0;
+#contact h2{
+    text-transform: uppercase;
+    text-align: center;
 }
 
+
 footer {
-    background: #333;
+    display: flex;
+    justify-content: space-between;
+    background: #000000;
     color: #fff;
-    text-align: center;
-    padding: 10px 0;
+    text-align: left;
+    padding: 10px 100px;
 }
 
 button {
-    background-color: #333;
+    background-color: #000000;
     color: white;
     border: none;
     padding: 10px;
@@ -76,15 +248,19 @@ button:hover {
 form {
     display: flex;
     flex-direction: column;
+    margin: 0px 200px;
 }
 
 form label {
     margin: 10px 0 5px;
 }
 
-form input, form textarea {
+form input,
+form textarea {
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
+
